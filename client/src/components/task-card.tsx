@@ -23,7 +23,7 @@ export function TaskCard({ task, onEdit, onDelete, onStatusToggle }: TaskCardPro
             <Button 
               variant="ghost" 
               size="icon" 
-              className="h-8 w-8 text-slate-500 hover:text-primary" 
+              className="h-8 w-8 text-blue-500 hover:text-blue-700" 
               onClick={onEdit}
               title="Edit task"
             >
@@ -32,7 +32,7 @@ export function TaskCard({ task, onEdit, onDelete, onStatusToggle }: TaskCardPro
             <Button 
               variant="ghost" 
               size="icon" 
-              className="h-8 w-8 text-slate-500 hover:text-red-600" 
+              className="h-8 w-8 text-red-500 hover:text-red-700" 
               onClick={onDelete}
               title="Delete task"
             >
