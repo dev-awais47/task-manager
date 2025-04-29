@@ -49,6 +49,7 @@ export function NewTaskDialog({ isOpen, onOpenChange }: NewTaskDialogProps) {
       toast({
         title: "Task created",
         description: "Your new task has been created successfully.",
+        variant: "success",
       });
     },
     onError: (error: Error) => {

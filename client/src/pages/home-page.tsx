@@ -42,6 +42,7 @@ export default function HomePage() {
       toast({
         title: "Task updated",
         description: "Your task has been updated successfully.",
+        variant: "success",
       });
     },
     onError: (error: Error) => {
@@ -64,6 +65,7 @@ export default function HomePage() {
       toast({
         title: "Task deleted",
         description: "Your task has been deleted successfully.",
+        variant: "info",
       });
     },
     onError: (error: Error) => {
