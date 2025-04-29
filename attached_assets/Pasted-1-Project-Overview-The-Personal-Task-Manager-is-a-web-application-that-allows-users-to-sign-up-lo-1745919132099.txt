@@ -1,0 +1,137 @@
+1. Project Overview
+The Personal Task Manager is a web application that allows users to sign up, log in, and manage their personal tasks. Each user has a private dashboard where they can view, add, edit, complete, and delete their own tasks.
+
+2. Project Goals
+Allow users to create a secure account.
+
+
+Allow users to log in securely.
+
+
+Provide a private dashboard where users can manage only their tasks.
+
+
+Ensure a smooth and responsive user experience.
+
+
+
+3. Core Features
+3.1 User Authentication
+Sign Up
+
+
+Users can create an account by providing their name, email, and password.
+
+
+User account creation must be validated (e.g., unique email, password requirements).
+
+
+Login
+
+
+Users can log in with their registered email and password.
+
+
+Upon successful login, users are redirected to their personal dashboard.
+
+
+Authentication Security
+
+
+Unauthorized users should not be able to access protected parts of the application.
+
+
+3.2 Task Management (CRUD Operations)
+Create Task
+
+
+Users can create new tasks by entering:
+
+
+Task Title (required)
+
+
+Task Description (optional)
+
+
+Status (defaults to "Pending").
+
+
+View Tasks
+
+
+Users can view a list of their own tasks.
+
+
+Tasks are shown in reverse chronological order (newest first).
+
+
+Edit Task
+
+
+Users can edit the title, description, and status (mark as "Pending" or "Completed").
+
+
+Delete Task
+
+
+Users can delete a task permanently from their dashboard.
+
+
+3.3 User Dashboard
+After login, users are directed to their personal Dashboard.
+
+
+Dashboard Features:
+
+
+Display all the user's tasks.
+
+
+Buttons for:
+
+
+Add New Task
+
+
+Edit Task
+
+
+Delete Task
+
+
+Mark Task as Completed
+
+
+Optional filter:
+
+
+View only completed tasks.
+
+
+View only pending tasks.
+
+
+
+4. Basic User Interface Requirements
+Simple and clean design.
+
+
+Validation for forms (e.g., required fields must not be empty).
+
+
+Display clear error and success messages (e.g., login failed, task added successfully).
+
+
+
+Deliverables
+Functional Personal Task Manager web application.
+
+
+User authentication (signup and login).
+
+
+Private dashboard for each user to manage tasks.
+
+
+User can create, view, update, and delete tasks.
