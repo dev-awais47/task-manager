@@ -43,6 +43,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     },
     onSuccess: (user: SelectUser) => {
       queryClient.setQueryData(["/api/user"], user);
+      // Clear any existing tasks from cache on login
+      queryClient.removeQueries({ queryKey: ["/api/tasks"] });
       toast({
         title: "Login successful",
         description: `Welcome back, ${user.name}!`,
@@ -64,6 +66,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     },
     onSuccess: (user: SelectUser) => {
       queryClient.setQueryData(["/api/user"], user);
+      // Clear any existing tasks from cache on registration
+      queryClient.removeQueries({ queryKey: ["/api/tasks"] });
       toast({
         title: "Registration successful",
         description: `Welcome, ${user.name}!`,
@@ -84,6 +88,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     },
     onSuccess: () => {
       queryClient.setQueryData(["/api/user"], null);
+      // Clear any existing tasks from cache on logout
+      queryClient.removeQueries({ queryKey: ["/api/tasks"] });
       toast({
         title: "Logged out",
         description: "You have been successfully logged out.",

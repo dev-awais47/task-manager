@@ -46,7 +46,7 @@ export function TaskCard({ task, onEdit, onDelete, onStatusToggle }: TaskCardPro
         </p>
         
         <div className="flex items-center justify-between">
-          <Badge variant={isCompleted ? "success" : "secondary"}>
+          <Badge variant={isCompleted ? "success" : "pending"}>
             {isCompleted ? "Completed" : "Pending"}
           </Badge>
           <Button 
