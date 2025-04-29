@@ -27,6 +27,7 @@ export function Navbar() {
                     size="sm"
                     onClick={handleLogout}
                     disabled={logoutMutation.isPending}
+                    className="bg-rose-50 text-rose-600 hover:bg-rose-100 border-rose-200 hover:text-rose-700"
                   >
                     {logoutMutation.isPending ? "Logging out..." : "Log out"}
                   </Button>
