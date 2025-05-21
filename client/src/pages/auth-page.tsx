@@ -95,7 +95,7 @@ export default function AuthPage() {
           <div className="flex justify-between items-center">
             <div className="flex items-center">
               <ListTodo className="text-primary h-6 w-6 mr-2" />
-              <h1 className="text-xl font-semibold text-slate-900">TaskFlow</h1>
+              <h1 className="text-xl font-semibold text-slate-900">Task Manager</h1>
             </div>
             <div className="flex items-center space-x-4">
               <Button 
